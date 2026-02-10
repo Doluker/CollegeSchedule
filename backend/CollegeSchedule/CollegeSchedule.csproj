@@ -7,31 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\**" />
-    <Compile Remove="DTO\**" />
-    <Compile Remove="Middlewares\**" />
-    <Compile Remove="Services\**" />
-    <Content Remove="Data\**" />
-    <Content Remove="DTO\**" />
-    <Content Remove="Middlewares\**" />
-    <Content Remove="Services\**" />
-    <EmbeddedResource Remove="Data\**" />
-    <EmbeddedResource Remove="DTO\**" />
-    <EmbeddedResource Remove="Middlewares\**" />
-    <EmbeddedResource Remove="Services\**" />
-    <None Remove="Data\**" />
-    <None Remove="DTO\**" />
-    <None Remove="Middlewares\**" />
-    <None Remove="Services\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.22">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.11" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTO\" />
+    <Folder Include="Middlewares\" />
   </ItemGroup>
 
 </Project>
