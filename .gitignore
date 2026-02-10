@@ -1,0 +1,41 @@
+# === [ .NET / Visual Studio ] ===
+bin/
+obj/
+out/
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.doccache
+/TestResults/
+*.suo
+*.user
+*.userosscache
+*.sln.doccache
+*.subs
+.ut/
+
+# === [ Android / Kotlin / Gradle ] ===
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.apk
+*.ap_
+*.dex
+*.class
+/app/build/
+.idea/
+
+# === [ PostgreSQL / Database ] ===
+*.log
+*.tmp
+/db-data/
+
+# === [ OS & Misc ] ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
