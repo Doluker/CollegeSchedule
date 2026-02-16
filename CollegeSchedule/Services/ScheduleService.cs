@@ -123,5 +123,10 @@ namespace CollegeSchedule.Services
                 Lessons = new List<LessonDTO>()
             };
         }
+        public Task<List<string>> GetGroups() 
+        {
+            var groups = _db.StudentGroups.Select(g => g.GroupName).ToListAsync();
+            return groups;
+        }
     }
 }
